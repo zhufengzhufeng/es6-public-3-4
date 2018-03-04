@@ -61,3 +61,23 @@ function deepClone(parent,c){ // parent是要拷贝的对象
 }
 console.log(deepClone(school));
 
+
+function mapActions (){
+    return {name:1,age:2}
+}
+let obj = {
+    ...mapActions()
+}
+
+// 展开运算符
+let arr = [1,2,3,4,5]
+console.log(Math.min.apply(Math,arr));
+console.log(Math.min(...arr));
+
+function a(a,b){
+    return a+b;
+}
+let fn = (n,b,c,...args)=>{
+    console.log(a(...args))
+}
+fn(1,2,3,4,5);
