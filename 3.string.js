@@ -29,7 +29,7 @@ console.log(newStr);
 // 带标签的模板字符串
 let name = 'zfpx';
 let age = 9;
-function tag(strings){
+function a(strings){
     let args = Array.prototype.slice.call(arguments,1);
     let str = ''
     for(var i = 0;i<args.length;i++){
@@ -38,7 +38,7 @@ function tag(strings){
     str+=strings[strings.length - 1]
     return str;
 }
-let str = tag`${name}今年${age}${age}岁了`
+let str = a`${name}今年${age}${age}岁了`
 console.log(str);
 
 // 字符串的常见方法
